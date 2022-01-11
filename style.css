@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(#141414, #0f091d);
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+
+}
+
+.photo-frame {
+    width: 310px;
+    position: relative;
+    margin: 20px;
+    border-radius: 10px;
+    border: 4px solid lightslategray;
+
+}
+
+.photo img {
+    width: 100%;
+}
+
+.photo-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    transition: all 3s ease;
+
+}
+
+.photo-details h3 {
+    background-color: rgba(199, 130, 245, 0.6);
+    padding: 10px;
+    color: #001b36;
+    margin-bottom: 5px;
+
+}
+
+.photo-details p {
+    background-color: rgba(253, 65, 17, 0.2);
+    padding: 10px;
+    color: #001b36;
+    margin-bottom: 5px;
+
+}
+
+.photo-aulbm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-frame:hover .photo-details {
+    background-color: rgba(139, 119, 119, 0.4);
+    display: block;
+    color: lightgrey;
+    text-align: center;
+    transition: all 3s ease;
+    padding-top: 50px;
+
+
+}
+
+.photo-container {
+    text-align: center;
+    font-weight: 600;
+
+}
+
+.banner-title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 60px;
+    position: relative;
+    color: transparent;
+}
+
+.banner-title::before {
+    content: "The Lion King ";
+    top: 0;
+    left: 0;
+    position: absolute;
+    color: #1fecff;
+    animation: typing 3.5s linear infinite;
+}
+
+.h3-lion {
+    text-align: center;
+    font-weight: 700;
+    font-size: 45px;
+    padding: 10px;
+    color: #fad3ff;
+
+
+}
+
+@keyframes typing {
+    0% {
+        content: "T|";
+    }
+
+    5% {
+        content: "Th|";
+    }
+
+    10% {
+        content: "The|";
+    }
+
+    15% {
+        content: "The |";
+    }
+
+    20% {
+        content: "The L|";
+    }
+
+    25% {
+        content: "The Li|";
+    }
+
+    30% {
+        content: "The Lio|";
+    }
+
+    35% {
+        content: "The Lion|";
+    }
+
+    40% {
+        content: "The Lion |";
+    }
+
+    45% {
+        content: "The Lion k|";
+    }
+
+    50% {
+        content: "The Lion ki|";
+    }
+
+    55% {
+        content: 'The Lion kin|';
+    }
+
+    60% {
+        content: 'The Lion king|';
+    }
+
+    65%,
+    85% {
+        content: 'The Lion king|';
+    }
+
+    86% {
+        content: 'The Lion kin|';
+    }
+
+    87% {
+        content: 'The Lion ki|';
+    }
+
+    88% {
+        content: 'The Lion k|';
+    }
+
+    89% {
+        content: 'The Lion k|';
+    }
+
+    90% {
+        content: 'The Lion |';
+    }
+
+    91% {
+        content: 'The Lion|';
+    }
+
+    92% {
+        content: 'The Lio|';
+    }
+
+    93% {
+        content: 'The Li|';
+    }
+
+    94% {
+        content: 'The L|';
+    }
+
+    95% {
+        content: 'The |';
+    }
+
+    96% {
+        content: 'The|';
+    }
+
+    97% {
+        content: 'Th|';
+    }
+
+    98% {
+        content: 'T|';
+    }
+
+    99% {
+        content: '|';
+    }
+
+    100% {
+        content: '|';
+    }
+
+}

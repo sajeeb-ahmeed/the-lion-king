@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Use</title>
+</head>
+<script src="https://kit.fontawesome.com/53dfca91b0.js" crossorigin="anonymous"></script>
+<style>
+    .container-login {
+        display: flex;
+        justify-content: center;
+    }
+
+    .login-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .login-form input {
+        font-size: 1.3rem;
+        margin-top: 1rem;
+        border: 1px solid lightgrey;
+        padding-left: 10px;
+    }
+
+    input[type="button"] {
+        background-color: #ff6464;
+        font-size: 1.3rem;
+        margin-top: 1rem;
+        border: 1px solid lightgrey;
+        padding-left: 10px;
+        font-weight: 700;
+        border-radius: 7px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: lightslategrey;
+        font-size: 1rem;
+        margin-right: 2rem;
+
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <span>
+                <a href="">Home</a>
+                <a href="">Products</a>
+                <a href="">Orders</a>
+                <a href="">About Us</a>
+            </span>
+            <span>
+                <a href=""><i class="far fa-user"></i></a>
+                <a href=""><i class="far fa-user"></i></a>
+            </span>
+
+        </nav>
+
+    </header>
+    <div class="container-login">
+        <div class="login-form">
+            <h1>Login Form</h1>
+
+            <input type="email" name="" id="email" placeholder="Enter Your Email">
+            <input type="password" name="" id="email" placeholder="Enter Your Passowrd">
+            <!-- <input type="button" value="login"> -->
+            <input type="button" value="Login">
+        </div>
+    </div>
+</body>
+
+</html>
