@@ -4,14 +4,25 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+
 body {
     background-image: linear-gradient(#141414, #0f091d);
+    font-family: 'Mulish', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
 }
 
 .banner {
     display: flex;
     justify-content: center;
     margin-top: 100px;
+
 
 }
 
@@ -20,8 +31,17 @@ body {
     position: relative;
     margin: 20px;
     border-radius: 10px;
-    border: 4px solid lightslategray;
+    border: 2px solid gray;
+    object-fit: cover;
+    cursor: wait;
 
+}
+
+.photo-frame:hover {
+    border-bottom: 10px groove #333333;
+    border-left: 5px solid #a8a8a8;
+    border-right: 10px dashed #b0b0b0;
+    border-top: 8px dotted #acacac;
 }
 
 .photo img {
@@ -39,15 +59,15 @@ body {
 
 .photo-details h3 {
     background-color: rgba(199, 130, 245, 0.6);
-    padding: 10px;
+    padding: 5px 10px;
     color: #001b36;
-    margin-bottom: 5px;
+
 
 }
 
 .photo-details p {
     background-color: rgba(253, 65, 17, 0.2);
-    padding: 10px;
+    padding: 5px 10px;
     color: #001b36;
     margin-bottom: 5px;
 
@@ -66,10 +86,30 @@ body {
     color: lightgrey;
     text-align: center;
     transition: all 3s ease;
-    padding-top: 50px;
-
-
+    padding-top: 20px;
 }
+
+.photo-frame:hover button {
+    background-color: rgba(155, 141, 141, 0.4);
+    color: #000000;
+    text-align: center;
+    justify-content: center;
+    transition: all 3s ease;
+    padding: 8px 12px;
+    border-radius: 15px;
+    box-shadow: rgb(112, 112, 112) 5px 5px 13px 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+Button:hover {
+    background: #1C6EA4;
+}
+
+Button:active {
+    background: #144E75;
+}
+
 
 .photo-container {
     text-align: center;
@@ -77,21 +117,22 @@ body {
 
 }
 
-.banner-title {
+.The-lion {
     color: #fff;
     font-weight: 700;
     font-size: 60px;
     position: relative;
     color: transparent;
+
 }
 
-.banner-title::before {
+.The-lion::before {
     content: "The Lion King ";
     top: 0;
     left: 0;
     position: absolute;
     color: #1fecff;
-    animation: typing 3.5s linear infinite;
+    animation: lion 3.5s linear infinite;
 }
 
 .h3-lion {
@@ -100,11 +141,31 @@ body {
     font-size: 45px;
     padding: 10px;
     color: #fad3ff;
+    font-family: 'Lobster', cursive;
 
 
 }
 
-@keyframes typing {
+.footer {
+    display: block;
+    width: 100%;
+    height: 100px;
+    background-color: #141414;
+    text-align: center;
+    color: #5eebf8;
+    font-family: 'Luxurious Roman', cursive;
+}
+
+.footer h3,
+p {
+    padding: 10px;
+}
+
+.footer p {
+    color: #fad3ff;
+}
+
+@keyframes lion {
     0% {
         content: "T|";
     }

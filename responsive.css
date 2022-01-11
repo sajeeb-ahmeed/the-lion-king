@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 550px) {
+    /* .photo-frame {
+        width: 100vw;
+        display: block;
+    } */
+
+    .The-lion {
+        font-size: 40px;
+        /* font-weight: 700; */
+    }
+
+    .h3-lion {
+        font-size: 30px;
+    }
+}
